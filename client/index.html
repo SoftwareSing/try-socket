@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <div style="max-width: 500px;">
+      <div class="input-group mb-3">
+        <input id="input-message" type="text" class="form-control" placeholder="傳送訊息到聊天室" aria-label="傳送訊息到聊天室" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button id="send-btn" type="button" class="btn btn-primary" onclick="sendChatMessage()">發送</button>
+        </div>
+      </div>
+      <div id="msgList">
+        <div>
+          <span>歡迎，送個訊息看看啊</span>
+          <br />
+        </div>
+      </div>
+    </div>
+    <script src="/socket.js"></script>
+    <script src="enter.js"></script>
+  </body>
+</html>
